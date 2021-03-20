@@ -31,26 +31,26 @@ export class StreetComponent implements OnInit {
       console.log('Data:', this.data);
       // need to loop over features to make array for street
       console.log('Street:', this.data.features[0].properties.STREET);
-      for (let event in this.data) {
-        if (event = "features") {
-          console.log('event: ' + event)
-          let dataCopy = this.data[event];
-          // console.log('dataCopy: ' + dataCopy)
-          for (this.data in dataCopy) {
-              let mainData = dataCopy[this.data];
-              // console.log('mainData: ' + mainData)
-              for (const key in mainData) {
-                // console.log('key1: ' + key)
-                  if (key === "STREET") {
-                      console.log('key2: ' + key + ' :: value : ' + mainData[key])
-                  }
-              }
-          }
-        }
-        else {
-          console.log('no features found')
-        }
-    }​
+    //   for (let event in this.data) {
+    //     if (event = "features") {
+    //       console.log('event: ' + event)
+    //       let dataCopy = this.data[event];
+    //       // console.log('dataCopy: ' + dataCopy)
+    //       for (this.data in dataCopy) {
+    //           let mainData = dataCopy[this.data];
+    //           // console.log('mainData: ' + mainData)
+    //           for (const key in mainData) {
+    //             // console.log('key1: ' + key)
+    //               if (key === "STREET") {
+    //                   console.log('key2: ' + key + ' :: value : ' + mainData[key])
+    //               }
+    //           }
+    //       }
+    //     }
+    //     else {
+    //       console.log('no features found')
+    //     }
+    // }​
     });
   }
 }
