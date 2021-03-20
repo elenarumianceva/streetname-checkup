@@ -1,0 +1,49 @@
+.label {
+    font-size: 20px;
+    margin-top: 40px;
+    display: inline-block;
+  }
+  
+.btn-primary {
+  display: flex;
+  border-radius: 10px;
+  padding: 10px 50px;
+  background-color: #663399;
+  color: #b9bfff;
+  font-weight: 700;
+  margin: 40px auto;
+  font-size: 20px;
+}
+
+.street-status {
+  background-color: #22277a;
+  margin: 0;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  color: #93d3fb;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 10px #93d3fb;
+}
+
+.street-list {
+  width: 100%;
+  background-color: #93d3fb;
+  color: #663399;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 0 10px #b9bfff;
+}
+
+.lists {
+  display: flex;
+  width: 100%;
+}
+
+.list {
+  flex: 1;
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.5;
+}
+  

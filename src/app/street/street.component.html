@@ -1,0 +1,23 @@
+<label *ngIf="!streetChecked; else noStreets" class="label">Let's check the street names!</label>
+<button
+    class="btn btn-primary"
+    *ngIf="!streetChecked; else noStreets"
+    (click)="onCheckStreet()">CHECK</button>
+<h3 *ngIf="!streetChecked" class="street-status">The street name check has not been done</h3>
+<div *ngIf="streetChecked" class="lists">
+  <div class="street-list">
+    <h3>
+      Streets
+    </h3>
+    <ul class="list">
+      <!-- <li *ngFor="let street of streets" class="names">
+        {{ street.name }}
+      </li> -->
+      <li>
+          sample street
+      </li>
+    </ul>
+  </div>
+</div>
+<ng-template #noStreets>
+</ng-template>
