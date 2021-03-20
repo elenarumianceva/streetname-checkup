@@ -1,20 +1,23 @@
-<label *ngIf="!streetChecked; else noStreets" class="label">Let's check the street names!</label>
+<label *ngIf="!streetChecked; else notChecked" class="label">Let's check the street names!</label>
 <button
     class="btn btn-primary"
-    *ngIf="!streetChecked; else noStreets"
+    *ngIf="!streetChecked; else notChecked"
     (click)="onCheckStreet()">CHECK</button>
+<ng-template #notChecked>
+</ng-template>
 <h3 *ngIf="!streetChecked" class="street-status">The street name check has not been done</h3>
 <div *ngIf="streetChecked" class="lists">
   <div class="street-list">
     <h3>
       Streets
     </h3>
-    <ul class="list">
+    <ul class="list" *ngIf="streets.length; else noStreets">
       <li *ngFor="let street of streets" class="names">
         {{ street }}
       </li>
     </ul>
+    <ng-template #noStreets>
+      <h4>Loading... Please wait</h4>
+    </ng-template>
   </div>
 </div>
-<ng-template #noStreets>
-</ng-template>
