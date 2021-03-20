@@ -3,7 +3,7 @@
     margin-top: 40px;
     display: inline-block;
   }
-  
+
 .btn-primary {
   display: flex;
   border-radius: 10px;
@@ -46,4 +46,3 @@
   padding-left: 0;
   line-height: 1.5;
 }
-  
