@@ -11,7 +11,7 @@ export class StreetComponent implements OnInit {
   streetChecked = false;
   street = '';
   data: any;
-  streets = [];
+  streets = ['Shady street', 'Test road', 'Weirdo path'];
 
   constructor() { }
 
