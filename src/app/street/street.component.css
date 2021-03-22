@@ -9,7 +9,7 @@
   border-radius: 10px;
   padding: 10px 50px;
   background-color: #663399;
-  color: #b9bfff;
+  color: #C6CAF8;
   font-weight: 700;
   margin: 40px auto;
   font-size: 20px;
@@ -20,10 +20,10 @@
   margin: 0;
   padding-bottom: 18px;
   padding-top: 18px;
-  color: #93d3fb;
+  color: #b9dfff;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  box-shadow: 0 10px #93d3fb;
+  box-shadow: 0 10px #b9dfff;
 }
 
 .street-list {
@@ -32,7 +32,7 @@
   color: #663399;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  box-shadow: 0 10px #b9bfff;
+  box-shadow: 0 10px #C6CAF8;
 }
 
 .lists {
