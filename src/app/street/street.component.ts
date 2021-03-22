@@ -33,10 +33,10 @@ export class StreetComponent implements OnInit {
       this.data.features.forEach((feature: any) => {
         (this.streets.indexOf(feature.properties.STREET) === -1) && this.streets.push(feature.properties.STREET);
       })
-      .catch(function (error: any) {
-        // handle error
-        console.log(error);
-      })
-    });
+    })
+    .catch(function (error: any) {
+      // handle error
+      console.log(error);
+    })
   }
 }
